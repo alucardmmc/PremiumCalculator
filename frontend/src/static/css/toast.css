@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.toast {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    max-width: 600px;
+    padding: 6px;
+    background: #cccccc;
+    color: #333333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s, top 0.2s, visibility 0.2s;
+}
+
+.toast--visible {
+    top: 20px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.toast--success {
+    background: #2E8B57;
+    border-color: #2b754b;
+    color: #ffffff;
+}
+
+.toast--error {
+    background: #e74c3c;
+    border-color: #b93829;
+    color: #ffffff;
+}
