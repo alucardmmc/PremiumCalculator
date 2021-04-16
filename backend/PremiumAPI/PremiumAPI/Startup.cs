@@ -46,7 +46,7 @@ namespace PremiumAPI
             DefaultFile.DefaultFileNames.Clear();
             DefaultFile.DefaultFileNames.Add("index.html");
 
-            app.UseDefaultFiles(DefaultFile);
+            app.UseDefaultFiles();
 
             app.UseStaticFiles();
 
